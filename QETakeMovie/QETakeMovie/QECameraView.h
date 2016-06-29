@@ -30,4 +30,6 @@
 @property (nonatomic,weak) id<QECameraViewDelegate> delegate;
 @property (nonatomic,weak)  UIView *progressView; //拍摄进度条
 @property (nonatomic,weak)  QEShootButton *shootBtn;  //拍摄按钮
+@property (nonatomic,weak)     UIButton *flashButton; //闪光灯
+@property (nonatomic,weak)   UIButton *changeCameraBtn; //改变摄像头 ;
 @end

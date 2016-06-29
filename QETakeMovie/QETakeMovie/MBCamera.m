@@ -172,7 +172,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     }];
 }
 
--(void)changeDeviceProperty:(PropertyChangeBlock)propertyChange{
+- (void)changeDeviceProperty:(PropertyChangeBlock)propertyChange{
+   
     AVCaptureDevice *captureDevice= [_videoCaptureDeviceInput device];
     NSError *error;
     //注意改变设备属性前一定要首先调用lockForConfiguration:调用完之后使用unlockForConfiguration方法解锁

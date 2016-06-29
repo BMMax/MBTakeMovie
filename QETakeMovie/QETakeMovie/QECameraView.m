@@ -15,8 +15,7 @@
 
 @interface QECameraView()<QEShootButtonDelegate>
 {
-    UIButton *flashButton; //闪光灯
-    UIButton *changeCameraBtn; //改变摄像头
+
    // UIButton *shootBtn; //拍摄按钮
     NSTimer *countTimer; //计时器
     UIView *progressViewBorder; //边框
@@ -58,7 +57,7 @@
         btn;
     });
     
-    changeCameraBtn = cameraBtn;
+    self.changeCameraBtn = cameraBtn;
     [self addSubview:cameraBtn];
     
     // 2.闪光灯
@@ -68,7 +67,7 @@
         [btn addTarget:self action:@selector(flashButtonTap:) forControlEvents:UIControlEventTouchUpInside];
         btn;
     });
-    flashButton = flashBtn;
+    self.flashButton = flashBtn;
     [self addSubview:flashBtn];
     
     //底部按钮view
@@ -120,7 +119,7 @@
     // 2.闪光灯
     CGFloat flashBtnRight = 19.0;
     CGFloat flashBtnWidth = cameraBtnHeight;
-    [flashButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.flashButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(cameraBtn);
         make.right.mas_equalTo(cameraBtn.mas_left).offset(-flashBtnRight);
         make.top.mas_equalTo(cameraBtn.mas_top);
@@ -152,7 +151,7 @@
         make.height.mas_equalTo(progressHeight);
     }];
     // 6 切圆角
-    [flashButton makeCornerRadius:flashBtnWidth * 0.5 borderColor:nil borderWidth:0];
+    [self.flashButton makeCornerRadius:flashBtnWidth * 0.5 borderColor:nil borderWidth:0];
     [cameraBtn makeCornerRadius:cameraBtnHeight * 0.5 borderColor:nil borderWidth:0];
   //  [shootBtn makeCornerRadius:shootBtnWH * 0.5 borderColor:[UIColor blackColor] borderWidth:3];
     

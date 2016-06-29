@@ -211,6 +211,38 @@ static NSString *const VIDEO_FOLDER = @"videoFolder";
 {
 
     NSLog(@"交换摄像头");
+    
+    AVCaptureDevice *currentDevice=[_camera.videoCaptureDeviceInput device];
+    AVCaptureDevicePosition currentPosition=[currentDevice position];
+    AVCaptureDevice *toChangeDevice;
+    AVCaptureDevicePosition toChangePosition=AVCaptureDevicePositionFront;
+    if (currentPosition==AVCaptureDevicePositionUnspecified||currentPosition==AVCaptureDevicePositionFront) {
+        toChangePosition=AVCaptureDevicePositionBack;
+        _cameraView.flashButton.hidden = NO;
+    }else{
+        _cameraView.flashButton.hidden = YES;
+    }
+    toChangeDevice=[self getCameraDeviceWithPosition:toChangePosition];
+    //获得要调整的设备输入对象
+    AVCaptureDeviceInput *toChangeDeviceInput=[[AVCaptureDeviceInput alloc]initWithDevice:toChangeDevice error:nil];
+    
+    //改变会话的配置前一定要先开启配置，配置完成后提交配置改变
+    [_camera.session  beginConfiguration];
+    //移除原有输入对象
+    [_camera.session removeInput:_camera.videoCaptureDeviceInput];
+    //添加新的输入对象
+    if ([_camera.session canAddInput:toChangeDeviceInput]) {
+        [_camera.session addInput:toChangeDeviceInput];
+        _camera.videoCaptureDeviceInput = toChangeDeviceInput;
+    }
+    //提交会话配置
+    [_camera.session commitConfiguration];
+    
+    //关闭闪光灯
+    _cameraView.flashButton.selected = NO;
+    [_cameraView.flashButton setBackgroundImage:[UIImage imageNamed:@"flashOn"] forState:UIControlStateNormal];
+    [self setTorchMode:AVCaptureTorchModeOff];
+    
 
 }
 /****** 打开闪光灯 *****/
@@ -218,6 +250,18 @@ static NSString *const VIDEO_FOLDER = @"videoFolder";
 {
 
     NSLog(@"打开闪光灯");
+    if (_cameraView.flashButton.selected == YES) {
+        _cameraView.flashButton.selected = NO;
+        //关闭闪光灯
+        [_cameraView.flashButton setBackgroundImage:[UIImage imageNamed:@"flashOn"] forState:UIControlStateNormal];
+        [self setTorchMode:AVCaptureTorchModeOff];
+    }else{
+        _cameraView.flashButton.selected = YES;
+        //开启闪光灯
+        [_cameraView.flashButton setBackgroundImage:[UIImage imageNamed:@"flashOff"] forState:UIControlStateNormal];
+        [self setTorchMode:AVCaptureTorchModeOn];
+    }
+
 
 }
 /****** 开始拍摄 *****/
@@ -333,6 +377,27 @@ static NSString *const VIDEO_FOLDER = @"videoFolder";
 
    //}
 }
+
+
+#pragma mark - 私有方法
+-(AVCaptureDevice *)getCameraDeviceWithPosition:(AVCaptureDevicePosition )position{
+    NSArray *cameras= [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    for (AVCaptureDevice *camera in cameras) {
+        if ([camera position]==position) {
+            return camera;
+        }
+    }
+    return nil;
+}
+
+-(void)setTorchMode:(AVCaptureTorchMode )torchMode{
+    [_camera changeDeviceProperty:^(AVCaptureDevice *captureDevice) {
+        if ([captureDevice isTorchModeSupported:torchMode]) {
+            [captureDevice setTorchMode:torchMode];
+        }
+    }];
+}
+
 
 - (void)mergeAndExportVideosAtFileURLs:(NSMutableArray *)fileURLArray
 {
