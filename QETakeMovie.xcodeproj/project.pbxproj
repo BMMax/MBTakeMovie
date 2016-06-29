@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE36951A1D1FA8F6005BFFBA /* MBCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3695191D1FA8F6005BFFBA /* MBCamera.m */; };
+		CE3695201D2264EA005BFFBA /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE36951F1D2264EA005BFFBA /* PlayVideoViewController.m */; };
 		CE648C391D1C440D00A27294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C381D1C440D00A27294 /* main.m */; };
 		CE648C3C1D1C440D00A27294 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C3B1D1C440D00A27294 /* AppDelegate.m */; };
 		CE648C3F1D1C440D00A27294 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C3E1D1C440D00A27294 /* ViewController.m */; };
 		CE648C421D1C440D00A27294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE648C401D1C440D00A27294 /* Main.storyboard */; };
 		CE648C441D1C440D00A27294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE648C431D1C440D00A27294 /* Assets.xcassets */; };
 		CE648C471D1C440D00A27294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE648C451D1C440D00A27294 /* LaunchScreen.storyboard */; };
+		CE648C511D1C44E000A27294 /* QETakeMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C501D1C44E000A27294 /* QETakeMovieViewController.m */; };
+		CE648C541D1C47B200A27294 /* QECameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C531D1C47B200A27294 /* QECameraView.m */; };
+		CE648C6F1D1C47E400A27294 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C571D1C47E400A27294 /* MASCompositeConstraint.m */; };
+		CE648C701D1C47E400A27294 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C5A1D1C47E400A27294 /* MASConstraint.m */; };
+		CE648C711D1C47E400A27294 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C5C1D1C47E400A27294 /* MASConstraintMaker.m */; };
+		CE648C721D1C47E400A27294 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C5E1D1C47E400A27294 /* MASLayoutConstraint.m */; };
+		CE648C731D1C47E400A27294 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C621D1C47E400A27294 /* MASViewAttribute.m */; };
+		CE648C741D1C47E400A27294 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C641D1C47E400A27294 /* MASViewConstraint.m */; };
+		CE648C751D1C47E400A27294 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C661D1C47E400A27294 /* NSArray+MASAdditions.m */; };
+		CE648C761D1C47E400A27294 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C691D1C47E400A27294 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		CE648C771D1C47E400A27294 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C6B1D1C47E400A27294 /* View+MASAdditions.m */; };
+		CE648C781D1C47E400A27294 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C6E1D1C47E400A27294 /* ViewController+MASAdditions.m */; };
+		CE648C7F1D1C493400A27294 /* changeCamer.png in Resources */ = {isa = PBXBuildFile; fileRef = CE648C791D1C493400A27294 /* changeCamer.png */; };
+		CE648C801D1C493400A27294 /* flashOff.png in Resources */ = {isa = PBXBuildFile; fileRef = CE648C7A1D1C493400A27294 /* flashOff.png */; };
+		CE648C811D1C493400A27294 /* flashOn.png in Resources */ = {isa = PBXBuildFile; fileRef = CE648C7B1D1C493400A27294 /* flashOn.png */; };
+		CE648C821D1C493400A27294 /* focusImg.png in Resources */ = {isa = PBXBuildFile; fileRef = CE648C7C1D1C493400A27294 /* focusImg.png */; };
+		CE648C831D1C493400A27294 /* shootFinish.png in Resources */ = {isa = PBXBuildFile; fileRef = CE648C7D1D1C493400A27294 /* shootFinish.png */; };
+		CE648C841D1C493400A27294 /* videoPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = CE648C7E1D1C493400A27294 /* videoPlay.png */; };
+		CE648C871D1C4C7500A27294 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C861D1C4C7500A27294 /* UIView+Tools.m */; };
+		CE648C911D1E1E8000A27294 /* QEShootButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE648C901D1E1E8000A27294 /* QEShootButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3695181D1FA8F5005BFFBA /* MBCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCamera.h; sourceTree = "<group>"; };
+		CE3695191D1FA8F6005BFFBA /* MBCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCamera.m; sourceTree = "<group>"; };
+		CE36951E1D2264EA005BFFBA /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		CE36951F1D2264EA005BFFBA /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
 		CE648C341D1C440D00A27294 /* QETakeMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QETakeMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE648C381D1C440D00A27294 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE648C3A1D1C440D00A27294 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +52,45 @@
 		CE648C431D1C440D00A27294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE648C461D1C440D00A27294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE648C481D1C440D00A27294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE648C4F1D1C44E000A27294 /* QETakeMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QETakeMovieViewController.h; sourceTree = "<group>"; };
+		CE648C501D1C44E000A27294 /* QETakeMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QETakeMovieViewController.m; sourceTree = "<group>"; };
+		CE648C521D1C47B200A27294 /* QECameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QECameraView.h; sourceTree = "<group>"; };
+		CE648C531D1C47B200A27294 /* QECameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QECameraView.m; sourceTree = "<group>"; };
+		CE648C561D1C47E400A27294 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		CE648C571D1C47E400A27294 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		CE648C581D1C47E400A27294 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		CE648C591D1C47E400A27294 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		CE648C5A1D1C47E400A27294 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		CE648C5B1D1C47E400A27294 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		CE648C5C1D1C47E400A27294 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		CE648C5D1D1C47E400A27294 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		CE648C5E1D1C47E400A27294 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		CE648C5F1D1C47E400A27294 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		CE648C601D1C47E400A27294 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		CE648C611D1C47E400A27294 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		CE648C621D1C47E400A27294 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		CE648C631D1C47E400A27294 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		CE648C641D1C47E400A27294 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		CE648C651D1C47E400A27294 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		CE648C661D1C47E400A27294 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		CE648C671D1C47E400A27294 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		CE648C681D1C47E400A27294 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		CE648C691D1C47E400A27294 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		CE648C6A1D1C47E400A27294 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		CE648C6B1D1C47E400A27294 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		CE648C6C1D1C47E400A27294 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		CE648C6D1D1C47E400A27294 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		CE648C6E1D1C47E400A27294 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		CE648C791D1C493400A27294 /* changeCamer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeCamer.png; sourceTree = "<group>"; };
+		CE648C7A1D1C493400A27294 /* flashOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashOff.png; sourceTree = "<group>"; };
+		CE648C7B1D1C493400A27294 /* flashOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashOn.png; sourceTree = "<group>"; };
+		CE648C7C1D1C493400A27294 /* focusImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focusImg.png; sourceTree = "<group>"; };
+		CE648C7D1D1C493400A27294 /* shootFinish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shootFinish.png; sourceTree = "<group>"; };
+		CE648C7E1D1C493400A27294 /* videoPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoPlay.png; sourceTree = "<group>"; };
+		CE648C851D1C4C7500A27294 /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		CE648C861D1C4C7500A27294 /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
+		CE648C8F1D1E1E8000A27294 /* QEShootButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QEShootButton.h; sourceTree = "<group>"; };
+		CE648C901D1E1E8000A27294 /* QEShootButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QEShootButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +123,8 @@
 		CE648C361D1C440D00A27294 /* QETakeMovie */ = {
 			isa = PBXGroup;
 			children = (
+				CE648C551D1C47E400A27294 /* Masonry */,
+				CE648C4E1D1C44C500A27294 /* QETakeMovie */,
 				CE648C3A1D1C440D00A27294 /* AppDelegate.h */,
 				CE648C3B1D1C440D00A27294 /* AppDelegate.m */,
 				CE648C3D1D1C440D00A27294 /* ViewController.h */,
@@ -77,6 +144,63 @@
 				CE648C381D1C440D00A27294 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE648C4E1D1C44C500A27294 /* QETakeMovie */ = {
+			isa = PBXGroup;
+			children = (
+				CE36951E1D2264EA005BFFBA /* PlayVideoViewController.h */,
+				CE36951F1D2264EA005BFFBA /* PlayVideoViewController.m */,
+				CE648C851D1C4C7500A27294 /* UIView+Tools.h */,
+				CE648C861D1C4C7500A27294 /* UIView+Tools.m */,
+				CE648C791D1C493400A27294 /* changeCamer.png */,
+				CE648C7A1D1C493400A27294 /* flashOff.png */,
+				CE648C7B1D1C493400A27294 /* flashOn.png */,
+				CE648C7C1D1C493400A27294 /* focusImg.png */,
+				CE648C7D1D1C493400A27294 /* shootFinish.png */,
+				CE648C7E1D1C493400A27294 /* videoPlay.png */,
+				CE648C4F1D1C44E000A27294 /* QETakeMovieViewController.h */,
+				CE648C501D1C44E000A27294 /* QETakeMovieViewController.m */,
+				CE648C521D1C47B200A27294 /* QECameraView.h */,
+				CE648C531D1C47B200A27294 /* QECameraView.m */,
+				CE648C8F1D1E1E8000A27294 /* QEShootButton.h */,
+				CE648C901D1E1E8000A27294 /* QEShootButton.m */,
+				CE3695181D1FA8F5005BFFBA /* MBCamera.h */,
+				CE3695191D1FA8F6005BFFBA /* MBCamera.m */,
+			);
+			path = QETakeMovie;
+			sourceTree = "<group>";
+		};
+		CE648C551D1C47E400A27294 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				CE648C561D1C47E400A27294 /* MASCompositeConstraint.h */,
+				CE648C571D1C47E400A27294 /* MASCompositeConstraint.m */,
+				CE648C581D1C47E400A27294 /* MASConstraint+Private.h */,
+				CE648C591D1C47E400A27294 /* MASConstraint.h */,
+				CE648C5A1D1C47E400A27294 /* MASConstraint.m */,
+				CE648C5B1D1C47E400A27294 /* MASConstraintMaker.h */,
+				CE648C5C1D1C47E400A27294 /* MASConstraintMaker.m */,
+				CE648C5D1D1C47E400A27294 /* MASLayoutConstraint.h */,
+				CE648C5E1D1C47E400A27294 /* MASLayoutConstraint.m */,
+				CE648C5F1D1C47E400A27294 /* Masonry.h */,
+				CE648C601D1C47E400A27294 /* MASUtilities.h */,
+				CE648C611D1C47E400A27294 /* MASViewAttribute.h */,
+				CE648C621D1C47E400A27294 /* MASViewAttribute.m */,
+				CE648C631D1C47E400A27294 /* MASViewConstraint.h */,
+				CE648C641D1C47E400A27294 /* MASViewConstraint.m */,
+				CE648C651D1C47E400A27294 /* NSArray+MASAdditions.h */,
+				CE648C661D1C47E400A27294 /* NSArray+MASAdditions.m */,
+				CE648C671D1C47E400A27294 /* NSArray+MASShorthandAdditions.h */,
+				CE648C681D1C47E400A27294 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				CE648C691D1C47E400A27294 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				CE648C6A1D1C47E400A27294 /* View+MASAdditions.h */,
+				CE648C6B1D1C47E400A27294 /* View+MASAdditions.m */,
+				CE648C6C1D1C47E400A27294 /* View+MASShorthandAdditions.h */,
+				CE648C6D1D1C47E400A27294 /* ViewController+MASAdditions.h */,
+				CE648C6E1D1C47E400A27294 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +260,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE648C831D1C493400A27294 /* shootFinish.png in Resources */,
+				CE648C821D1C493400A27294 /* focusImg.png in Resources */,
+				CE648C7F1D1C493400A27294 /* changeCamer.png in Resources */,
 				CE648C471D1C440D00A27294 /* LaunchScreen.storyboard in Resources */,
+				CE648C801D1C493400A27294 /* flashOff.png in Resources */,
 				CE648C441D1C440D00A27294 /* Assets.xcassets in Resources */,
 				CE648C421D1C440D00A27294 /* Main.storyboard in Resources */,
+				CE648C841D1C493400A27294 /* videoPlay.png in Resources */,
+				CE648C811D1C493400A27294 /* flashOn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +279,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE648C761D1C47E400A27294 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CE648C511D1C44E000A27294 /* QETakeMovieViewController.m in Sources */,
+				CE648C741D1C47E400A27294 /* MASViewConstraint.m in Sources */,
 				CE648C3F1D1C440D00A27294 /* ViewController.m in Sources */,
+				CE648C541D1C47B200A27294 /* QECameraView.m in Sources */,
 				CE648C3C1D1C440D00A27294 /* AppDelegate.m in Sources */,
+				CE648C771D1C47E400A27294 /* View+MASAdditions.m in Sources */,
+				CE3695201D2264EA005BFFBA /* PlayVideoViewController.m in Sources */,
+				CE648C6F1D1C47E400A27294 /* MASCompositeConstraint.m in Sources */,
+				CE648C731D1C47E400A27294 /* MASViewAttribute.m in Sources */,
+				CE648C711D1C47E400A27294 /* MASConstraintMaker.m in Sources */,
+				CE648C751D1C47E400A27294 /* NSArray+MASAdditions.m in Sources */,
+				CE648C781D1C47E400A27294 /* ViewController+MASAdditions.m in Sources */,
+				CE648C701D1C47E400A27294 /* MASConstraint.m in Sources */,
+				CE648C721D1C47E400A27294 /* MASLayoutConstraint.m in Sources */,
+				CE648C911D1E1E8000A27294 /* QEShootButton.m in Sources */,
+				CE36951A1D1FA8F6005BFFBA /* MBCamera.m in Sources */,
+				CE648C871D1C4C7500A27294 /* UIView+Tools.m in Sources */,
 				CE648C391D1C440D00A27294 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +446,7 @@
 				CE648C4D1D1C440D00A27294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

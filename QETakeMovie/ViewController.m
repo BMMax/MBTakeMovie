@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QETakeMovieViewController.h"
 
 @interface ViewController ()
 
@@ -14,9 +15,20 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)takeMovie:(UIButton *)sender {
+    
+   UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:({
+        QETakeMovieViewController *vc = [[QETakeMovieViewController alloc]init];
+        vc;
+    })];
+
+    [self presentViewController:nav animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
